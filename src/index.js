@@ -3,6 +3,8 @@
  * module.exports -- Default export
  * exports.{function name or variable name} -- Named Export
  */
+import "./css/main.css";
+
 import name from "./nav";
 import { red, blue } from "./footer";
 

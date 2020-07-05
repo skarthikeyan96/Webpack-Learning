@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "serve": "webpack-dev-server",
-    "dev": "npm run serve -- --env.mode development --watch",
+    "dev": "npm run serve -- --env.mode development --watch --hot",
     "prod": "npm run build -- --env.mode production",
     "debug": "node --inspect --inspect-brk ./src/index.js"
   },
@@ -19,7 +19,10 @@
     "webpack-cli": "3.3.12"
   },
   "devDependencies": {
+    "css-loader": "3.6.0",
     "html-webpack-plugin": "4.3.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "style-loader": "1.2.1",
     "webpack-dev-server": "3.11.0",
     "webpack-merge": "4.2.2"
   }
