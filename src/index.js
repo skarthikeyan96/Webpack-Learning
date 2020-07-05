@@ -1,10 +1,11 @@
 /**
  * CommonJS modules
- * module.exports -- Default export 
+ * module.exports -- Default export
  * exports.{function name or variable name} -- Named Export
  */
-import name from './nav'
-import {red,blue} from './footer'
+import name from "./nav";
+import { red, blue } from "./footer";
 
-console.log(name())
-console.log(red)
+console.log(name());
+console.log(red);
+console.log(blue);

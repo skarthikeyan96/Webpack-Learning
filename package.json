@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "npm run build -- --mode development --watch",
+    "serve": "webpack-dev-server",
+    "dev": "npm run serve -- --env.mode development --watch",
     "prod": "npm run build -- --env.mode production",
     "debug": "node --inspect --inspect-brk ./src/index.js"
   },
@@ -18,6 +19,8 @@
     "webpack-cli": "3.3.12"
   },
   "devDependencies": {
-    "html-webpack-plugin": "4.3.0"
+    "html-webpack-plugin": "4.3.0",
+    "webpack-dev-server": "3.11.0",
+    "webpack-merge": "4.2.2"
   }
 }
