@@ -7,6 +7,21 @@ module.exports = ({ mode } = (mode = "production")) => {
   return WebpackMerge(
     {
       mode,
+      module: {
+        rules: [
+          {
+            test: /\.(png|jpg|gif)$/i,
+            use: [
+              {
+                loader: "url-loader",
+                options: {
+                  limit: 8192,
+                },
+              },
+            ],
+          },
+        ],
+      },
       output: {
         filename: "bundle.js",
       },
